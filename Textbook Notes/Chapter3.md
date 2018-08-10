@@ -1,0 +1,121 @@
+CHAPTER 3: NUMERICALLY SUMMARIZING DATA
+
+- 3.1 Measures of Central Tendency
+  - (1) Determine the arithmetic mean of a variable from raw data
+    - The **arithmetic mean** of a variable is computed by adding all the values of the variable in the data set and dividing by the number of observations.
+    - The data must be quantitative
+    - The **population arithmetic mean** (pronounced "mew"), is computed using all the individuals in a population. The population mean is a parameter.
+    - The **sample arithmetic mean** (pronounced "x-bar"), is computed using sample data. The sample mean is a statistic.
+    - While other types of means exist, the arithmetic mean is generally referred to as the mean
+    - The mean is the value such that a histogram of the data is perfectly balanced
+  - (2) Determine the median of a variable from raw data
+    - The **median** of a variable is the value that lies in the middle of the data when arranged in ascending order. We use *M* to represent the median.
+    - The data must be quantitative
+    - Steps in Finding the Median of a Data Set
+      - Step 1) Arrange the data in ascending order.
+      - Step 2) Determine the number of observations, *n*.
+      - Step 3) Determine the observation in the middle of the data set.
+        - If the number of observations is odd, then the median is the data value exactly in the middle of the data set. That is, the median is the observation that lies in the (n+1)/2 position.
+        - If the number of observations is even, then the median is the mean of the two middle observations in the data set. That is, the mean is the mean of that observations that lie in the (n/2) position and the (n/2)+1 position.
+  - (3) Explain what it means for a statistic to be resistant
+    - A numerical summary of data is said to be **resistant** if extreme values (very large of small) relative to the data do not affect its value substantially.
+    - The median is resistant, while the mean is not resistant
+    - Relation between the Mean, Median, and Distribution Shape
+      - Skewed left - Mean substantially smaller than median
+      - Symmetric - Mean roughly equal to the median
+      - Skewed right - Mean substantially larger than median
+    - If the data are roughly symmetric, the mean is the better measure of central tendency. If the data are skewed, the median is the better measure.
+  - (4) Determine the mode of a variable from raw data
+    - The **mode** of a variable is the most frequent observation of the variable that occurs in the data set.
+    - The data can be either quantitative or qualitative
+    - To compute the mode, tally the number of observations that occur for each data value. The data value that occurs most often is the mode.
+    - A set of data can have no mode, one mode, or more than one mode.
+    - If no observation occurs more than once, we say the data have **no mode**.
+    - If the data set has two modes, we say the data are **bimodal**.
+    - If a data set has three or more data values that occur with the highest frequency, the data set is **multimodal**. The most is usually not reported for multimodal data because it is not representative of a typical value.
+    - We cannot determine the value of the mean or median of data that are nominal. The only measure of central tendency that can be determined for nominal data is the mode.
+- 3.2 Measures of Dispersion
+  - **Dispersion** is the degree to which the data are spread out.
+  - (1) Determine the range of a variable from raw data
+    - The **range, R**, of a variable is the difference between the largest and the smallest data value. That is, Range = R = largest data value - smallest data value.
+    - The data must be quantitative
+    - The range is not resistant
+  - (2) Determine the standard deviation of a variable from raw data
+    - The **population standard deviation** of a variable is the square root of the sum of squared deviations about the population mean divided by the number of observations in the population, *N*. That is, it is the square root of the mean of the squared deviations about the population mean. The population standard deviation is symbolically represented by lowercase Greek sigma.
+    - The sum of all deviations about the mean must equal zero.
+    - If a data set has many observations that are "far" from the mean, the sum of the squared deviations will be large, and therefore the standard deviation will be large.
+    - We call n-1 the **degrees of freedom** because the first n-1 observations have the freedom to be whatever value they wish, but the nth value has no freedom. It must be whatever value forces the sum of the deviations about the mean to equal zero.
+    - In other words, we have n-1 degrees of freedom in the computation of s because an unknown parameter, mew, is estimated with x-bar. For each parameter estimated, we lose 1 degree of freedom.
+    - You should notice that typically Greek letters are used for parameters, while Roman letters are used for statistics
+    - The standard deviation is not resistant
+    - Interpretations of the Standard Deviation
+      - We can interpret the standard deviation as the typical deviation from the mean
+      - If we are comparing two populations, then **the larger the standard deviation, the more dispersion the distribution has**, provided that the variable of interest from the two populations has the same unit of measure.
+  - (3) Determine the variance of a variable from raw data
+    - The **variance** of a variable is the square of the standard deviation. The **population variance** is lowercase sigma squared and the **sample variance** is *s^2*.
+    - The units of measure in variance are squared values
+    - Whenever a statistic consistently underestimates (or overestimates) a parameter, it is said to be **biased**. This is why the formula for sample standard deviation (and variance) divides by n-1
+  - (4) Use the Empirical Rule to describe data that are bell shaped
+    - The Empirical Rule
+      - If a distribution is roughly bell shaped, then:
+        - Approximately 68% of the data will lie within 1 standard deviation of the mean
+        - Approximately 95% of the data will lie within 2 standard deviations of the mean
+        - Approximately 99.7% of the data will lie within 3 standard deviations of the mean
+  - (5) Use Chebyshev's Inequality to describe any set of data
+    - Chebyshev's Inequality
+      - For any data set or distribution, at least (1 - 1/k^2) * 100% of the observations lie within k standard deviations of the mean, where k is any number greater than 1.
+    - Because the Empirical Rule requires that the distribution be bell shaped, while Chebyshev's Inequality applies to all distributions, the Empirical Rule gives more precise results
+- 3.3 Measures of Central Tendency and Dispersion from Grouped Data
+  - We have discussed how to compute descriptive statistics from raw data, but often the only data available have already been summarized in frequency distributions (**grouped data**). Although we cannot find exact values of the mean or standard deviation without raw data, we can approximate these measures.
+  - (1) Approximate the mean of a variable from grouped data
+    - Because raw data cannot be retrieved from a frequency table, we assume that within each class the mean of the data values is equal to the class midpoint. We then multiply the class midpoint by the frequency. This product is expected to be close to the sum of the data that lie within the class. We repeat the process for each class and add the results. This sum approximates the sum of all the data. Then we divide by the sum of the frequencies.
+  - (2) Compute the weighted mean
+    - The **weighted mean** of a variable is found by multiplying each value of the variable by its corresponding weight, adding these products, and dividing this sum by the sum of the weights.
+  - (3) Approximate the standard deviation of a variable from grouped data
+    - The procedure for approximating the standard deviation from grouped data is similar to that of finding the mean from grouped data (use the class midpoint). Again, because we do not have access to the original data, the standard deviation is approximate.
+- 3.4 Measures of Position and Outliers
+  - In this section, we discuss measures of position, which describe the *relative position* of a certain data value within the entire set of data
+  - (1) Determine and interpret z-scores
+    - The **z-score** represents the distance that a data value is from the mean in terms of the number of standard deviations. We find it by subtracting the mean from the data value and dividing this result by the standard deviation.
+    - The z-score is unites. It has mean 0 and standard deviation 1.
+    - If a data value is larger than the mean, the z-score is positive. If a data value is smaller than the mean, the z-score is negative. If the data value equals the mean, the z-score is zero.
+  - (2) Interpret percentiles
+    - The median is a special case of a general concept called the percentile
+    - The **kth percentile** of a set of data is a value such that k percent of the observations are less than or equal to the value
+    - Percentiles divide a set of data that is written in ascending order into 100 parts; thus 99 percentiles can be determined
+  - (3) Determine and interpret quartiles
+    - The most common percentiles are quartiles. **Quartiles** divide data sets into fourths, or four equal parts.
+    - The first quartile is equivalent to the 25th percentile
+    - The second quartile is equivalent to the 50th percentile or the median
+    - The third quartile is equivalent to the 75th percentile
+    - Finding Quartiles
+      - Step 1) Arrange the data in ascending order
+      - Step 2) Determine the median, M, or second quartile
+      - Step 3) Divide the data set into halves: the observations below M and the observations above M. The first quartile is the median of the bottom half of the data and the third quartile is the median of the top half of the data.
+  - (4) Determine and interpret the interquartile range
+    - Quartiles are resistant
+    - The **interquartile range, IQR**, is the range of the middle 50% of the observations in a data set. That is, the IQR is the difference between the third and first quartiles and is found using the formula IQR = Q3 - Q1.
+    - The more spread a set of data has, the higher the IQR will be
+    - When the distribution of data is highly skewed or contains extreme observations, it is best to use the interquartile range as the measure of dispersion because it is resistant
+    - For the remainder of this text, the direction **describe the distribution** will mean to describe its shape (skewed left, skewed right, symmetric), its center (mean or median), and its spread (standard deviation or interquartile range)
+  - (5) Check a set of data for outliers
+    - Extreme observations are referred to as **outliers**
+    - Checking for Outliers by Using Quartiles
+      - Step 1) Determine the first and third quartiles of the data
+      - Step 2) Compute the interquartile range
+      - Step 3) Determine the fences. **Fences** serve as cutoff points for determining outliers.
+        - Lower fence = Q1 - 1.5 (IQR)
+        - Upper fence = Q3 + 1.5 (IQR)
+      - Step 4) If a data value is less than the lower fence or greater than the upper fence, it is considered an outlier.
+- 3.5 The Five-Number Summary and Boxplots
+  - **Exploratory data analysis**: we want these summaries to see what the data can tell us. We explore the data to see if they contain interesting information that may be useful in our research.
+  - (1) Compute the five-number summary
+    - The **five-number summary** of a set of data consists of the smallest data value, Q1, the median, Q3, and the largest data value
+  - (2) Draw and interpret boxplots
+    - The five-number summary can be used to create another graph, called the **boxplot**
+    - Drawing a Boxplot
+      - Step 1) Determine the lower and upper fences
+      - Step 2) Draw a number line long enough to include the maximum and minimum values. Insert vertical lines at Q1, M, and Q3. Enclose these vertical lines in a box.
+      - Step 3) Label the lower and upper fences
+      - Step 4) Draw a line from Q1 to the smallest data value that is larger than the lower fence. Draw a line from Q3 to the largest data value that is smaller than the upper fence. These lines are called **whiskers**.
+      - Step 5) Any data values less than the lower fence or greater than the upper fence are outliers and are marked with an asterisk (*).

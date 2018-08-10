@@ -1,0 +1,98 @@
+CHAPTER 5: PROBABILITY
+
+- 5.1 Probability Rules
+  - **Probability** is the measure of the likelyhood of a random phenomenon or chance behavior occurring. It deals with experiments that yield random short-term results or **outcomes** yet reveal long-term predictability. **The long-term proportion in which a certain outcome is observed is the probability of that outcome.**
+  - The Law of Large Numbers
+    - As the number of repetitions of a probability experiment increases, the proportion with which a certain outcome is observed gets closer to the probability of the outcome.
+  - In probability, an **experiment** is any process with uncertain results that can be repeated
+  - The **sample space**, S, of a probability experiment is the collection of all possible outcomes
+  - An **event** is any collection of outcomes from a probability experiment. An event consists of one outcome or more than one outcome.
+  - (1) Apply the rules of probabilities
+    - Rules of Probabilities
+      - (1) The probability of any event E, P(E), must be greater than or equal to 0 and less than or equal to 1.
+      - (2) The sum of the probabilities of all outcomes must equal 1.
+    - A **probability model** lists the possible outcomes of a probability experiment and each outcome's probability
+    - If an event is **impossible**, the probability of the event is 0
+    - If an event is a **certainty**, the probability of the event is 1
+    - The closer a probability is to 1, the more likely the event will occur
+    - The closer a probability is to 0, the less likely the event will occur
+    - An **unusual event** is an event that has a low probability of occurring
+    - Selecting a probability that separates unusual events from not so unusual events is subjective and depends on the situation; statisticians typically use cutoff points of 0.01, 0.05, and 0.10
+  - (2) Compute and interpret probabilities using the empirical method
+    - The probability of an event E is approximately the number of times event E is observed divided by the number of repetitions of the experiment (relative frequency)
+    - The empirical method gives an approximate probability of an event by conducting a probability experiment
+  - (3) Compute and interpret probabilities using the classical method
+    - The classical method of computing probabilities does not require that a probability experiment actually be performed; rather, it relies on counting techniques
+    - The classical method of computing probabilities requires *equally likely outcomes*
+    - An experiment has **equally likely outcomes** when each outcome has the same probability of occurring
+    - If an experiment has n equally likely outcomes and if the number of ways that an event E can occur is m, then the probability of E, P(E) is (m / n)
+    - A **tree diagram** can be used to list the equally likely outcomes of the experiment
+  - (4) Use simulation to obtain data based on probabilities
+  - (5) Recognize and interpret subjective probabilities
+    - A **subjective probability** of an outcome is a probability obtained on the basis of personal judgment
+- 5.2 The Addition Rule and Complements
+  - (1) Use the Addition Rule for Disjoint Events
+    - Two events are **disjoint** if they have no outcomes in common. Another name for disjoint events is **mutually exclusive** events.
+    - We can use **Venn diagrams** to represent events as circles enclosed in a rectangle
+    - Addition Rule for Disjoint Events
+      - If E and F are disjoint (or mutually exclusive) events, then P(E or F) = P(E) + P(F)
+  - (2) Use the General Addition Rule
+    - The General Addition Rule
+      - For any two events E and F, P(E or F) = P(E) + P(F) - P(E and F)
+  - (3) Compute the probability of an event using the Complement Rule
+    - **Complement of an Event**
+      - Let S denote the sample space of a probability experiment and let E denote an event. The **complement of E**, denoted E^c, is all outcomes in the sample space S that are not outcomes in the event E.
+    - Complement Rule
+      - If E represents any event and E^c represents the complement of E, then P(E^c) = 1 - P(E)
+- 5.3 Independence and the Multiplication Rule
+  - (1) Identify independent events
+    - Two events E and F are **independent** if the occurrence of event E in a probability experiment does not affect the probability of event F. Two events are **dependent** if the occurrence of event E in a probability experiment affects the probability of event F.
+    - Disjoint Events versus Independent Events
+      - Disjoint events and independent events are different concepts
+      - Knowing two events are disjoint means that the events are not independent
+  - (2) Use the Multiplication Rule for Independent Events
+    - Multiplication Rule for Independent Events
+      - If E and F are independent events, then P(E and F) = P(E) x P(F)
+    - We can extend the Multiplication Rule for three or more independent events
+  - (3) Compute at-least probabilities
+    - Usually probabilities involving the phrase *at least* use the Complement Rule
+    - The phrase *at least* means "greater than or equal to"
+- 5.4 Conditional Probability and the General Multiplication Rule
+  - (1) Compute conditional probabilities
+    - Conditional Probability
+      - The notation P(F|E) is read "the probability of event F given event E." It is the probability that the event F occurs, given that the event E has occurred.
+    - Conditional Probability Rule
+      - If E and F are any two events, then P(F|E) = P(E and F) / P(E)
+  - (2) Compute probabilities using the General Multiplication Rule
+    - General Multiplication Rule
+      - The probability that two events E and F both occur is P(E and F) = P(E) x P(F|E)
+    - If small random samples are taken from large populations without replacement, it is reasonable to assume independence of the events. As a rule of thumb, if the sample size is less than 5% of the population size, we treat the events as independent
+    - Two events E and F are independent if P(E|F) = P(E) or, equivalently, if P(F|E) = P(F)
+- 5.5 Counting Techniques
+  - (1) Solve counting problems using the Multiplication Rule
+    - Multiplication Rule of Counting
+      - If a task consists of a sequence of choices in which there are p selections for the first choice, q selections for the second choice, r selections for the third choice, and so on, then the task of making these selections can be done in p x q x r ... different ways.
+  - (2) Solve counting problems using permutations
+    - A **permutation** is an ordered arrangement in which r objects are chosen from n distinct (different) obects so that r <= n and repetition is not allowed.
+    - Number of Permutations of n Distinct Objects Taken r at a Time
+      - The number of arrangements of r objects chosen from n objects, in which:
+        - (1) the n objects are distinct
+        - (2) repetition of objects is not allowed
+        - (3) order is important
+      - if given by the formula n! / (n-r)!
+  - (3) Solve counting problems using combinations
+    - A **combination** is a collection, without regard to order, in which r objects are chosen from n distinct objects with r <= n and without repetition.
+    - Number of Combinations of n Distinct Objects Taken r at a Time
+      - The number of different arrangements of r objects chosen from n objects, in which:
+        - (1) the n objects are distinct
+        - (2) repetition of objects is not allowed
+        - (3) order is not important
+      - is given by the formula n! / (r! x (n - r)!)
+    - Notice that nCr = nCn-r
+  - (4) Solve counting problems involving permutations with nondistinct items
+    - Permutations with Nondistinct Items
+      - The number of permutations of n objects on which n1 are one of a kind, n2 are of a second kind, ..., and nk are of a kth kind is given by n! / (n1! x n2! x ... x nk!) where n = n1 + n2 + ... + nk
+  - (5) Compute probabilities involging permutations and combinations
+    - The counting techniques presented in this section can be used along with the classical method to compute certain probabilities
+- 5.6 Putting It Together: Which Method Do I Use?
+- 5.7 Baye's Rule (online)

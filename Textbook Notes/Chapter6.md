@@ -1,0 +1,51 @@
+CHAPTER 6: DISCRETE PROBABILITY DISTRIBUTIONS
+
+- 6.1 Discrete Random Variables
+  - (1) Distinguish between discrete and continuous random variables
+    - If the outcome of a probability experiment is a numerical result, we say the outcome is a *random variable*
+    - A **random variable** is a numerical measure of the outcome of a probability experiment, so its value is determined by chance. Random variables are typically denoted using capital letters such as X.
+    - A **discrete random variable** has either a finite or countable number of values. The values of a discrete random variable can be plotted on a number line with space between each point.
+    - A **continous random variable** has infinitely many values. The values of a continuous random variable can be plotted on a line in an uninterrupted fashion.
+  - (2) Identify discrete probability distributions
+    - The **probability distribution** of a discrete random variable X provides the possible values of the random variable and their corresponding probabilities. A probability distribution can be in the form of a table, graph, or mathematical formula.
+    - Rules for a Discrete Probability Distribution
+      - (1) Sum of the probabilities equals one
+      - (2) 0 <= P(x) <= 1
+  - (3) Graph discrete probability distributions
+    - The graph of a discrete probability distribution is drawn using vertical lines above each value of the random variable to a height that is the probability of the random variable 
+  - (4) Compute and interpret the mean of a discrete random variable
+    - The mean of a discrete random variable is found by multiplying each possible value of the random variable by its corresponding probability and then adding these products
+    - Interpretation of the Mean of a Discrete Random Variable
+      - Suppose an experiment is repeated n independent times and the value of the random variable X is recorded. As the number of repetitions of the experiment increases, the mean value of the n trials will approach mew-x. The difference between x-bar and mew-x gets closer to 0 as n increases.
+  - (5) Interpret the mean of a discrete random variable as an expected value
+    - Because the mean of a random variable represents what we would expect to happen in the long run, it is also called the **expected value**, E(X).
+  - (6) Compute the standard deviation of a discrete random variable
+    - The standard deviation of a discrete random variable is the square root of a weighted average of the squared deviations for which the weights are the probabilities
+- 6.2 The Binomial Probability Distribution
+  - (1) Determine whether a probability experiment is a binomial experiment
+    - The **binomial probability distribution** is a discrete probability distribution that describes probabilities for experiments in which there are two mutually exclusive (disjoint) outcomes; these two outcomes are generally referred to as *success* and *failure*
+    - Criteria for a Binomial Probability Experiment
+      - (1) The experiment is performed a fixed number of times. Each repetition of the experiment is called a **trial**.
+      - (2) The trials are independent. This means that the outcome of one trial will not affect the outcome of the other trials.
+      - (3) For each trial, there are two mutually exclusive (disjoint) outcomes: success or failure.
+      - (4) The probability of success is the same for each trial of the experiment.
+    - Let the random variable X be the number of successes in n trials of a binomial experiment; then X is called a **binomial random variable**
+    - Notation Used in the Binomial Probability Distribution
+      - There are n independent trials of the experiment
+      - Let p denote the probability of success for each trial so that 1 - p is the probability of failure for each trial.
+      - Let X denote the number of successes in n independent trials of the experiment. So 0 <= x <= n.
+  - (2) Compute probabilities of binomial experiments
+    - Using Technology (TI-84):
+      - Compute P(x): **use function binompdf()**
+        - **binompdf(n, p, x)**
+      - Compute P(X <= x): **use function binomcdf()**
+        - **binomcdf(n, p, x)**
+  - (3) Compute the mean and standard deviation of a binomial random variable
+    - Formulas given
+  - (4) Graph a binomial probability distribution
+    - To graph a binomial probability distribution, first find the probabilities for each possible value of the random variable. Then use the same approach that was used to graph discrete probability distributions.
+    - The binomial probability distribution is skewed right if p < 0.5, symmetric and approximately bell shaped if p = 0.5, and skewed left if p > 0.5
+    - For a fixed p, as the number of trials n in a binomial experiment increases, the probability distribution of the random variable X becomes bell shaped. As a rule of thumb, if np(1 - p) >= 10, the probability distribution will be approximately bell shaped.
+    - Provided that np(1 - p) >= 10, the Empirical Rule can be used to identify unusual observations in a binomial experiment. Observations outisde the interval mew - 2(sigma) to mew + 2(sigma) may be considered unusual because the observation occurs less than 5% of the time.
+- 6.3 The Poisson Probability Distribution
+- 6.4 The Hypergeometric Probability Distribution

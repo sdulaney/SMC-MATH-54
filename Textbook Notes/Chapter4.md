@@ -1,0 +1,92 @@
+CHAPTER 4: DESCRIBING THE RELATION BETWEEN TWO VARIABLES
+
+- 4.1 Scatter Diagrams and Correlation
+  - The **response variable** is the variable whose value can be explained by the value of the **explanatory** or **predictor variable**
+  - (1) Draw and interpret scatter diagrams
+    - A **scatter diagram** is a graph that shows the relationship between two quantitative variables measured on the same individual. Each individual in the data set is represented by a point in the scatter diagram. The explanatory variable is plotted on the horizontal axis, and the response variable is plotted on the vertical axis.
+    - Two variables that are linearly related are **positively associated** when above-average values of one variable are associated with above-average values of the other variable and below-average values of one variable are associated with below-average values of the other variable. That is, two variables are positively associated if, whenever the value of one variable increases, the value of the other variable also increases.
+    - Two variables that are linearly related are **negatively associated** when above-average values of one variable are associated with below-average values of the other variable. That is, two variables are negatively associated if, whenever the value of one variable increases, the value of the other variable decreases.
+  - (2) Describe the properties of the linear correlation coefficient
+    - The **linear correlation coefficient** or **Pearson product moment correlation coefficient** is a measure of the strength and direction of the linear relation between two quantitative variables. The Greek letter rho represents the population correlation coefficient, and *r* represents thte sample correlation coefficient.
+    - Properties of the Linear Correlation Coefficient
+      - (1) The linear correlation coefficient is always between -1 and 1, inclusive.
+      - (2) If r = +1, then a perfect positive linear relation exists between the two variables.
+      - (3) If r = -1, then a perfect negative linear relation exists between the two variables.
+      - (4) The closer *r* is to +1, the stronger is the evidence of positive association between the two variables.
+      - (5) The closer *r* is to -1, the stronger is the evidence of negative association between the two variables.
+      - (6) If *r* is close to 0, then little or no evidence exists of a *linear* relation between the two variables. So **r close to 0 does not imply no relation, just no *linear* relation**.
+      - (7) The linear correlation coefficient is a unitless measure of association. So the unit of measure for x and y plays no role in the interpretation of *r*.
+      - (8) The correlation coefficient is not resistant. Therefore, an observation that does not follow the overall pattern of the data could affect the value of the linear correlation coefficient.
+  - (3) Compute and interpret the linear correlation coefficient
+    - In practice, linear correlation coefficients are found using technology. However, we present one computation by hand so that you may gain an appreciation of how the formula measures the strength of linear relation.
+  - (4) Determine whether a linear relation exists between two variables
+    - Testing for a Linear Relation
+      - Step 1) Determine the absolute value of the correlation coefficient
+      - Step 2) Find the critical value in Table II from Appendix A for the given sample size
+      - Step 3) If the absolute value of the correlation coefficient is greater than the critical vlaue, we say a linear relation exists between the two variables. Otherwise, no linear relation exists.
+  - (5) Explain the difference between correlation and causation
+    - If data used in a study are observational, we cannot conclude the two correlated variables have a causal relationship. If the data are the result of an experiment, we can.
+    - A **lurking variable** is related to both the explanatory and the response variable
+- 4.2 Least-Squares Regression
+  - One way to find a linear equation that describes a linear relation between two variables is to select two points from the data that appear to provide a good fit and to find the equation of the line through these two points
+  - (1) Find the least-squares regression line and use the line to make predictions
+    - The difference between the observed and predicted values of y is the error, or **residual**
+    - Least-Squares Regression Criterion
+      - The **least-squares regression line** is the line that minimizes the sum of the squared errors (or residuals). This line minimizes the sum of the squared vertical distance between the observed values of y and those predicted by the line, y-hat.
+    - The least-squares regression line always contains the point (x-bar, y-bar)
+    - Throughout the course, we agree to round the slope and y-intercept of the least-squares regression equation to four decimal places
+  - (2) Interpret the slope and the y-intercept of the least-squares regression line
+    - Interpretation of Slope
+      - Two interpretations of slope are acceptable:
+        - "If club-head speed increases by 1 mile per hour, the distance the golf ball travels increases by 3.1661 yards, on average"
+        - "If club-head speed increases by 1 mile per hour, the expected distance the golf ball will travel increases by 3.1661 yards."
+    - Interpretation of the y-Intercept
+      - In general, we interpret a y-intercept as the value of the response variable when the value of the explanatory variable is 0
+      - To interpret the y-intercept, we must first ask two questions:
+        - (1) Is 0 a reasonable value for the explanatory variable?
+        - (2) Do any observations near x = 0 exist in the data set?
+        - If the answer to either of these questions is no, we do not interpret the y-intercept
+      - We should not use the regression model to make predictions **outside the scope of the model**
+    - Predictions When There Is No Linear Relation
+      - When the correlation coefficient indicates no linear relation between the explanatory and response variables, and the scatter diagram indicates no relation at all between the variables, the use the mean of the response variable as the predicted value so that y-hat = y-bar.
+  - (3) Compute the sum of squared residuals
+    - Any line other than the least-squares regression line will have a sum of squared residuals that is greater than the sum of squared residuals for the regression line
+- 4.3 Diagnostics on the Least-Squares Regression Line
+  - (1) Compute and interpret the coefficient of determination
+    - The **coefficient of determination, *R^2***, measures the proportion of total variation in the response variable that is explained by the least-squares regression line
+    - The coefficient or determination isa number between 0 and 1, inclusive
+    - If R^2 = 0, the least-squares regression line has no explanatory value
+    - If R^2 = 1, the least-squares regression line explains 100% of the variation in the response variable
+    - The deviation between the observed and mean values of the response variable is called the **total deviation**
+    - The deviation between the predicted and mean values of the response variable is called the **explained deviation**
+    - The deviation between the observed and predicted values of the response variable is called the explained deviation
+    - To find the coefficient of determination, R^2, for the least-squares regression model, square the linear correlation coefficient
+  - (2) Perform residual analysis on the regression model
+    - Is a Linear Model Appropriate?	
+      - A correlation coefficient may indicate a linear relation exists between two variables even though the relation is not linear
+      - To determine if a linear model is appropriate, we also need to draw a **residual plot**, which is a scatter diagram with the residuals on the vertical axis and the explanatory variable on the horizontal axis
+      - If a plot of the residuals against the explanatory variable shows a discernible pattern, such as a curve, then the explanatory and response variable may not be linearly related
+    - Is the Variance of the Residuals Constant?
+      - If a plot of the residuals against the explanatory variable shows the spread of the residuals increasing or decreasing as the explanatory variable increases, then a strict requirement of the linear model is violated. This requirement is called **constant error variance (aka homoscedasticity).**
+    - Are There Any Outliers?
+      - An **outlier** can also be thought of as an observation whose response variable is inconsistent with the overall pattern of the data
+  - (3) Identify influential observations
+    - An **influential observation** is an observation that significantly affects the least-squares regression line's slope and/or y-intercept, or the value of the correlation coefficient
+    - How do we identify influential observations? Remove the point that is believed to be influential from the data set, and then recompute the correlation or regression line. If the correlation coefficient, slope, or y-intercept changes significantly, the removed point is influential.
+    - Influence is affected by two factors:
+      - (1) the relative vertical position of the observation (residuals)
+      - (2) the relative horizontal position of the observation (leverage)
+    - *Leverage* is a measure that depends on how much the observation's value of the explanatory variable differs from the mean value of the explanatory variable
+- 4.4 Contingency Tables and Association
+  - A **contingency table**, or a **two-way table**, relates two categories of data
+  - There is a **row variable** and a **column variable**
+  - Each box inside the table is called a **cell**
+  - (1) Compute the marginal distribution of a variable
+    - A **marginal distribution** of a variable is a frequency of relative frequency distribution of either the row or column variable in the contingency table. The distributions are called marginal because they appear in the right and the bottom margin of the contingency table.
+  - (2) Use the conditional distribution to identify association among categoricla data
+    - A **conditional distribution** lists the relative frequency of each category of the response variable, given a specific value of the explanatory variable in the contingency table.
+    - The methods for identifying the association between two categorical variables are different from the methods for measuring association between two quantitative variables
+    - The measure of association in this section is based on whether there are differences in the relative frequences of the response variable for the different categories of the explanatory variable
+  - (3) Explain Simpson's Paradox
+    - **Simpson's Paradox** describes a situation in which an association between two variables inverts of goes away when a third variable is introduced to the analysis
+- 4.5 Nonlinear Regression: Transformations (online)

@@ -1,0 +1,24 @@
+CHAPTER 10: HYPOTHESIS TESTS REGARDING A PARAMETER
+
+- 10.1 The Language of Hypothesis Testing
+  - (1) Determine the null and alternative hypotheses
+    - A **hypothesis** is a statement regarding a characteristic of one or more populations
+    - **Hypothesis testing** is a procedure, based on sample evidence and probability, used to test statements regarding a characteristic of one or more populations
+    - Steps in Hypothesis Testing:
+      - (1) Make a statement regarding the nature of the population.
+      - (2) Collect evidence (sample data) to test the statement.
+      - (3) Analyze the data to assess the plausibility of the statement.
+    - The **null hypothesis**, denoted H_0, is a statement to be tested. The null hypothesis is a statement of no change, no effect, or no difference and is assumed true until evidence indicates otherwise.
+    - The **alternative hypothesis**, denoted H_1, is a statement that we are trying to find evidence to support.
+  - (2) Explain Type I and Type II errors
+    - 
+  - (3) State conclusions for hypothesis tests
+- 10.2 Hypothesis Tests for a Population Proportion
+  - (1) Explain the logic of hypothesis testing
+  - (2) Test hypotheses about a population proportion
+  - (3) Test hypotheses about a population proportion using the binomial probability distribution
+- 10.3 Hypothesis Tests for a Population Mean
+  - (1) Test hypotheses about a mean
+  - (2) Understand the difference between statistical significance and practical significance
+- 10.4 Hypothesis Tests for a Population Standard Deviation
+  - (1) Test hypotheses about a population standard deviation

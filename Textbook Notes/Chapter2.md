@@ -1,0 +1,78 @@
+CHAPTER 2: ORGANIZING AND SUMMARIZING DATA
+
+- 2.1 Organizing Qualitative Data
+  - (1) Organize qualitative data in tables
+    - A **frequency distribution** lists each category of data and the number of occurrences for each category of data.
+    - The **relative frequency** is the proportion (or percent) of observations within a category and is found using the formula: Relative frequency = frequency / sum of all frequencies
+    - A **relative frequency distribution** lists each category of data together with the relative frequency
+  - (2) Construct bar graphs
+    - A **bar graph** is constructed by labeling each category of data on either the horizontal or vertical axis and the frequency of relative frequency of the category on the other axis. Rectangles of equal width are drawn for each category. The height of each rectangle represents the category's frequency or relative frequency.
+    - A **Pareto chart** is a bar graph whose bars are drawn in decreasing order of frequency or relative frequency.
+    - A **side-by-side bar graph** compares two different data sets. Relative frequencies should be used to account for different sample or population sizes.
+  - (3) Construct pie charts
+    - A **pie chart** is a circle divided into sectors. Each sector represents a category of data. The area of each sector is proportional to the frequency of the category.
+- 2.2 Organizing Quantitative Data: The Popular Displays
+  - (1) Organize discrete data in tables
+    - Use the values of the discrete variable to create the classes when the number of distinct data values is small.
+  - (2) Construct histograms of discrete data
+    - A **histogram** is constructed by drawing rectangles for each class of data. The height of each rectangle is the frequency or relative frequency of the class. The width of each rectangle is the same and the rectangles touch each other.
+  - (3) Organize continuous data in tables
+    - **Classes** are categories into which data are grouped
+    - When a data set consists of a large number of different discrete data values or when a data set consists of continuous data, we create classes by using intervals of numbers
+    - The **lower class limit** is the smallest value within the class
+    - The **upper class limit** is the largest value within the class
+    - The **class width** is the difference between consecutive lower class limits
+    - A table is **open ended** if the first class has no lower class limit or the last class has no upper class limit
+    - Guidelines for Determining the Lower Class Limit of the First Class and Class Width
+      - Choosing the Lower Class Limit of the First Class
+        - Choose the smallest observation in the data set or a convenient number slightly lower than the smallest observation in the data set.
+      - Determining the Class Width
+        - Decide on the number of classes. Generally, there should be between 5 and 20 classes. The smaller the data set, the fewer classes you should have.
+        - Determine the class width by computing Class width = (largest data value - smallest data value) / number of classes. Round this value *up* to a convenient number. Rounding up may result in fewer classes than were originally intended.
+  - (4) Construct histograms of continuous data
+    - To draw a frequency histogram, first label the lower class limits of each class on the horizontal axis. Then, for each class, draw a rectangle whose width is the class width and whose height is the frequency.
+  - (5) Draw stem-and-leaf plots
+    - A **stem-and-leaf plot** is another way to represent quantitative data graphically. In a stem-and-leaf plot (or stem plot), use the digits to the left of the rightmost digit to form the **stem**. Each rightmost digit forms a **leaf**.
+    - Construction of a Stem-and-Leaf Plot
+      - Step 1) The steam of a data value will consist of the digits to the left of the rightmost digit. The leaf of a data value will be the rightmost digit.
+      - Step 2) Write the stems in a vertical column in increasing order. Draw a vertical line to the right of the stems.
+      - Step 3) Write each leaf corresponding to the steams to the right of the vertical line.
+      - Step 4) Within each stem, rearrange the leaves in ascending order, title the plot, and include a legend to indicate what the values represent.
+    - If the data appear too bunched in a stem-and-leaf plot, we can use **split stems**, which is like adding more classes to a frequency distribution
+  - (6) Draw dot plots
+    - We draw a **dot plot** by placing each observation horizontally in increasing order and placing a dot above the observation each time it is observed
+  - (7) Identify the shape of a distribution
+    - One way that a variable is described is through the shape of its distribution
+    - In a symmetric distribution, if we split the histogram down the middle, the right and left sides are mirror images
+    - In a **uniform (symmetric) distribution**, the frequency of each value of the variable is evenly spread out across the values of the variable
+    - In a **bell-shaped (symmetric) distribution**, the highest frequency occurs in the middle and frequencies tail off to the left and right of the middle; that is, the graph looks like the profile of a bell
+    - In a **skewed right distribution**, the tail to the right of the peak is longer than the tail to the left of the peak
+    - In a **skewed left distribution**, the tail to the left of the peak is longer than the tail to the right of the peak
+    - Caution: we do not describe qualitative data as skewed left, skewed right, or uniform
+- 2.3 Additional Displays of Quantitative Data
+  - (1) Construct frequency polygons
+    - A **class midpoint** is the sum of consecutive lower class limits divided by 2
+    - A **frequency polygon** is a graph that uses points, connected by line segments, to represent frequencies for the classes. It is constructed by plotting a point above each class midpoint on a horizontal axis at a height equal to the frequency of the class. Next, line segments are drawn connecting consecutive points. Two additional line segments are drawn connecting each end of the graph with the horizontal axis.
+  - (2) Create cumulative frequency and relative frequency tables
+    - A **cumulative frequency distribution** displays the aggregate frequency of the category. In other words, for discrete data, it displays the total number of observations less than or equal to the category. For continuous data, it displays the total number of observations less than or equal to the upper class limit of the class.
+    - A **cumulative relative frequency distribution** displays the proportion (or percentage) of observations less than or equal to the category for discrete data and the proportion (or percentage) of observations less than or equal to the upper class limit for continuous data.
+  - (3) Construct frequency and relative frequency ogives
+    - An **ogive** is a graph that represents the cumulative frequency or cumulative relative frequency for the class. It is constructed by plotting points whose x-coordinates are the upper class limits and whose y-coordinates are the cumulative frequencies or cumulative relative frequencies of the class. Then line segments are drawn connecting consecutive points. An additional line segment is drawn connecting the first point to the horizontal axis at a location representing the upper limit of the class that would precede the first class class (if it existed).
+  - (4) Draw time-series graphs
+    - If the value of a variable is measured at different points in time, the data are referred to as **time-series data**
+    - A **time-series plot** is obtained by plotting the time in which a variable is measured on the horizontal axis and the corresponding value of the variable on the vertical axis. Line segments are then drawn connecting the points.
+- 2.4 Graphical Misrepresentations of Data
+  - (1) Describe what can make a graph misleading or deceptive
+    - Examples:
+      - Misrepresentation of Data
+      - Misrepresentation of Data by Manipulating the Vertical Scale
+      - Misleading Graphs
+      - Misrepresentations of Data: Three-Dimensional Scale
+    - Guidelines for constructing good graphics:
+      - Title and label the graphic axes clearly, providing explanations if needed. Include units of measurement and a data source when appropriate.
+      - Avoid distortion. Never lie about the data.
+      - Minimize the amount of white space in the graph. Use the available space to let the data stand out. If you truncate the scales, clearly indicate this to the reader.
+      - Avoid clutter, such as excessive gridlines and unnecessary backgrounds or pictures. Don't distract the reader.
+      - Avoid three dimensions. Three-dimensional charts may look nice, but they distract the reader and often lead to misinterpretation of the graphic.
+      - Do not use more than one design in the same graphic. Sometimes graphs use a different design in one portion of the graph to draw attention to that area. Don't try to force the reader to any specific part of the graph. Let the data speak for themselves.
+      - Avoid relative graphs that are devoid of data or scales.

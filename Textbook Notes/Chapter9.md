@@ -1,0 +1,65 @@
+CHAPTER 9: ESTIMATING THE VALUE OF A PARAMETER
+
+- 9.1 Estimating a Population Proportion
+  - (1) Obtain a point estimate for the population proportion
+    - A **point estimate** is the value of a statistic that estimates the value of a parameter
+    - Note: we agree to round proportions to three decimal places
+  - (2) Construct and interpret a confidence interval for the population proportion
+    - A **confidence interval** for an unknown parameter consists of an interval of numbers based on a point estimate
+    - The **level of confidence** represents the expected proportion of intervals that will contain the parameter if a large number of different samples is obtained. The level of confidence is denoted (1 - alpha) x 100%
+    - Whether a confidence interval contains the population parameter depends solely on the value of the sample statistic. ANy sample statistic that is in the tails of the sampling distribution will result in a confidence interval that does not include the population parameter.
+    - The **critical value** of the distribution represents the number of standard deviations the sample statistic can be from the parameter and still result in an interval that includes the parameter
+    - Interpretation of a Confidence Interval
+      - A (1 - alpha) x 100% confidence interval indicates that (1 - alpha) x 100% of all simple random samples of size n from the population whose parameter is unknown will result in an interval that contains the parameter.
+    - **A 90% level of confidence *does not* tell us there is a 90% probability the parameter lies between the upper and lower bound**
+    - As the level of confidence increases, the margin of error also increases
+    - As the sample size increases, the margin of error decreases
+  - (3) Determine the sample size necessary for estimating a population proportion within a specified margin of error
+    - Sample Size Needed for Estimating the Population Proportion p
+      - There are two formulas for the sample size required to obtain a (1 - alpha) x 100% confidence interval for p with a margin of error E, depending on whether p-hat, a prior estimate of p, is available. In both cases the result is **rounded up to the next integer** (not rounded off, like normal)
+  - **Technology Step-by-Step - Confidence Intervals about *p***
+    - (1) Press STAT, highlight TESTS, and select A: 1-propZInt
+    - (2) Enter the values of x and n
+    - (3) Enter the confidence level following C-Level:
+    - (4) Highlight Calculate: and press ENTER
+- 9.2 Estimating a Population Mean
+  - (1) Obtain a point estimate for the population mean
+    - The point estimate of mew is x-bar
+  - (2) State properties of Student's t-distribution
+    - Properties of the t-Distribution
+      - (1) The t-distribution is different for different degrees of freedom.
+      - (2) The t-distribution is centered at 0 and is symmetric about 0.
+      - (3) THe area under the curve is 1. The area under the curve to the right of 0 equals the area under the curve to the left of 0, which equals 1/2.
+      - (4) As t increases or decreases without bound, the graph approaches, but never equals, zero.
+      - (5) The area in the tails of the t-distribution is a little greater than the area in the tails of the standard normal distribution, because we are using s as an estiamte os sigma, thereby introducing further variability into the t-statistic.
+      - (6) As the sample size n increases, the density curve of t gets closer to the standard normal density curve. This result occurs because, as the sample size increases, the values of s get closer to the value of sigma, by the Law of Large Numbers.
+  - (3) Determine t-values
+    - Similar to z-alpha notation, t-alpha represents the t-value whose area under the t-distribution to the right of t-alpha is alpha
+    - The value of t-alpha depends not only on alpha, but also on the degrees of freedom, n - 1
+    - Use Table VII for the t-distribution
+    - The last row of Table VII lists the z-values from the standard normal distribution, use these values when the degrees of freedom are more than 1000 b/c the t-distribution starts to behave like the standard normal distribution as n increases
+  - (4) Construct and interpret a confidence interval for a population mean
+    - Constructing a (1 - alpha) x 100% Confidence Interval for mew
+      - Provided:
+        - (1) sample data come from a simple random sample or randomized experiment
+        - (2) sample size is small relative to the population size (n <= 0.05N)
+        - (3) the data come from a population that is normally distributed, or the sample size is large
+          - If the sample size is small, use a Normal Probability Plot and the critical value from Table VI
+        - (4) there are no outliers
+          - Use a boxplot to determine if there are any outliers
+      - The formulas for lower bound and upper bound are given
+  - (5) Determine the sample size needed to estimate a population mean within a specified margin of error
+    - Determining the Sample Size n
+      - The formula for n depends on z-(alpha / 2), not t-(alpha / 2)
+      - n is rounded up to the nearest whole number
+  - **Technology Step-by-Step - Confidence Intervals for mew (TI-84)**
+    - (1) If necessary, enter raw data in L1
+    - (2) Press STAT, highlight TESTS, and select 8: TInterval
+    - (3) If the data are raw, highlight DATA. Make sure List is set to L1 and Freq to 1. If summary statistics are known, highlight STATS and enter the summary statistics.
+    - (4) Enter the confidence level following C-Level:
+    - (5) Highligh Calculate; press ENTER
+- 9.3 Estimating a Population Standard Deviation
+  - (1) Find critical values for the chi-square distribution
+    - 
+  - (2) Construct and interpret confidence intervals for the population variance and standard deviation
+    - 
